@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #7c3aed 0%, #9333ea 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    width: 100%;
+}
+
+.quote-card {
+    background: white;
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.quote-icon {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.quote-text {
+    font-size: 24px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.quote-author {
+    font-size: 16px;
+    color: #666;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+.btn {
+    padding: 12px 24px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-new {
+    background: #7c3aed;
+    color: white;
+}
+
+.btn-new:hover {
+    background: #6d28d9;
+}
+
+.btn-share {
+    background: #e0e0e0;
+    color: #333;
+}
+
+.btn-share:hover {
+    background: #d0d0d0;
+}
+
+@media (max-width: 600px) {
+    .quote-card {
+        padding: 25px;
+    }
+    .quote-text {
+        font-size: 18px;
+    }
+    .btn {
+        display: block;
+        width: 90%;
+        margin: 10px auto;
+    }
+}
